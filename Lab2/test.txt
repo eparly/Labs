@@ -1,0 +1,6 @@
+python test.py --model model0.pth #Original dataset
+python test.py --model model1.pth #Blurred augmentation
+python test.py --model model2.pth #Flipped augmentation
+python test.py --model model3.pth #Flipped and blurred augmentation
+
+python test.py --model model3.pth --showImages t #Show images with predicted label - works with any model provided

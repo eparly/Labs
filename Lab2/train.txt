@@ -1,0 +1,5 @@
+#update the --saveFile and --plotFile with the file names you want
+python train.py --augmentation 0 --saveFile model0.pth --plotFile model0.png # No augmentation
+python train.py --augmentation 1 --saveFile model1.pth --plotFile model1.png # Blurred augmentation
+python train.py --augmentation 2 --saveFile model2.pth --plotFile model2.png # Horizontal Flip
+python train.py --augmentation 3 --saveFile model3.pth --plotFile model3.png # both augmentations

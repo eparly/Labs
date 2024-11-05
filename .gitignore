@@ -1,0 +1,7 @@
+*.zip
+*/data
+*/oxford-iiit-pet-noses
+*.idea
+*.xlsx
+*.pyc
+*.pth
