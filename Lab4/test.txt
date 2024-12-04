@@ -1,0 +1,11 @@
+# evaluate model no distillation
+python evaluate_model.py --model dilated_net.pth
+
+#evaluate model response distillation
+python evaluate_model.py --model dilated_net_response.pth
+
+#evaluate model feature distillation
+python evaluate_model.py --model feature_dilated_net.pth
+
+#evaluate resnet50
+python evaluate_resnet.py

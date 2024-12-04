@@ -1,0 +1,8 @@
+#train no distillation
+python train.py
+
+#train response distillation
+python response_distillation.py
+
+#train feature distillation
+python feature_distillation.py

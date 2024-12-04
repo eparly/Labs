@@ -1,0 +1,74 @@
+UNetLite version 1
+model size: 798,165
+device: T4
+batch size: 64
+number of epochs: 62
+optimizer: SGD
+scheduler: StepLR (step size 20, gamma 0.1)
+learning rate: 0.1
+weight decay: 0.001
+momentum: 0.9
+loss function: combination - cross entropy loss, dice loss (50/50)
+background weight factor: 3
+
+
+
+Results
+mIoU: 0.4489
+train loss: 1.4963
+val loss: 1.6437
+score: 0.0119?
+
+general notes:
+Good job picking up on background
+Decent job at determining object shape
+Terrible at predicting correct object class - try fine tuning the loss function for more CEloss
+
+
+epoch 5
+Class 0 IoU: 0.6836408238619974
+Class 1 IoU: 0.002201879038918976
+Class 2 IoU: 0.00035230109113513304
+Class 3 IoU: 0.0
+Class 4 IoU: 0.008463530073747864
+Class 5 IoU: 0.0
+Class 6 IoU: 0.013690493350051404
+Class 7 IoU: 1.9787583950642594e-05
+Class 8 IoU: 0.0
+Class 9 IoU: 0.0
+Class 10 IoU: 0.0
+Class 11 IoU: 0.00019898593705137377
+Class 12 IoU: 0.00012777809060542572
+Class 13 IoU: 0.0004997158673194767
+Class 14 IoU: 0.012022152014370225
+Class 15 IoU: 0.01436753696492188
+Class 16 IoU: 0.017280424027469682
+Class 17 IoU: 0.0
+Class 18 IoU: 0.0
+Class 19 IoU: 0.014107492116782102
+Class 20 IoU: 0.0
+miou: 0.036522519048491506
+
+epoch 30
+Class 0 IoU: 0.6733201944171109
+Class 1 IoU: 0.01905470738493773
+Class 2 IoU: 0.006618678054358783
+Class 3 IoU: 0.0001970480924470868
+Class 4 IoU: 0.010331033882029397
+Class 5 IoU: 0.0023402991595918264
+Class 6 IoU: 0.027072784238417587
+Class 7 IoU: 0.004020136524329014
+Class 8 IoU: 0.029160259210273525
+Class 9 IoU: 0.0
+Class 10 IoU: 0.00018237070924776905
+Class 11 IoU: 0.002493137725931766
+Class 12 IoU: 0.039251799401640836
+Class 13 IoU: 0.004064297065242654
+Class 14 IoU: 0.02692519392203099
+Class 15 IoU: 0.04337864591655464
+Class 16 IoU: 0.024509229348220345
+Class 17 IoU: 7.199600278182187e-05
+Class 18 IoU: 2.04961163800859e-05
+Class 19 IoU: 0.0015533173585802254
+Class 20 IoU: 0.0
+mIoU: 0.04355074402524319

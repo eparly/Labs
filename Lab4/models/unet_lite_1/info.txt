@@ -1,0 +1,25 @@
+UNetLite version 1
+model size: 798,165
+device: T4
+batch size: 64
+number of epochs: 62
+optimizer: SGD
+scheduler: StepLR (step size 20, gamma 0.1)
+learning rate: 0.1
+weight decay: 0.001
+momentum: 0.9
+loss function: combination - cross entropy loss, dice loss (50/50)
+background weight factor: 3
+
+
+
+Results
+mIoU: 0.4489
+train loss: 1.4963
+val loss: 1.6437
+score: 0.0119?
+
+general notes:
+Good job picking up on background
+Decent job at determining object shape
+Terrible at predicting correct object class - try fine tuning the loss function for more CEloss

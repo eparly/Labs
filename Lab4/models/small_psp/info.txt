@@ -1,0 +1,24 @@
+small psp - version 1
+
+model size: 423,349
+device: T4
+batch size: 8
+number of epochs: 60
+optimizer: Adam
+scheduler: StepLR (step size 15, gamma 0.1)
+learning rate: 0.001
+weight decay: 0.001
+loss function: combination - cross entropy loss, dice loss (60/40)
+background weight factor: 3
+
+
+
+Results
+mIoU: 0.4049
+train loss: 1.4071
+val loss: 1.4946
+score: 0.104
+
+general notes:
+Images dont for shape great
+Not enough background, could decrease the background weight factor
